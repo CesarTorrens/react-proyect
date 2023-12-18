@@ -19,6 +19,6 @@ const NoResults = () => {
 };
 
 export const Movies = ({ movies }: Movie[]) => {
-  const hasMovies = movies.length > 0;
+  const hasMovies = movies?.length > 0;
   return hasMovies ? <ListOfMovies movies={movies} /> : NoResults();
 };
